@@ -31,7 +31,8 @@ end
 
 
 NaiveTimeSolution = Vector{Float64}()
-for i=1:10
+sumval = 0
+for i=1:1000
 tic()
 n = 1
 sumval = 0
@@ -53,6 +54,7 @@ println("Done with Naive Version")
 #Better solution is possible taking into account that only every other third fibonaci
 #Number is even
 BetterTimeSolution = Vector{Float64}()
+sumval2 = 0
 for i=1:1000
 tic()
 n = 1
